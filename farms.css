@@ -25,6 +25,14 @@ body {
 
 /* Header */
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white; /* tai sivusi taustaväri */
+}
+
+
 .site-header {
   background: var(--accent);
   color: #ffffff;
@@ -39,6 +47,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  /*position: fixed;*/
 }
 /*Minä lisännyt*/
 .logo {
@@ -64,10 +73,12 @@ body {
 }
 
 .main-nav {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 0.5rem;
+  /*position: fixed;*/
+
 }
 
 .main-nav a {
