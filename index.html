@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Onnelan Farms Oy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="farms.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <!-- Vaihda src omaan logotiedostoosi -->
+      <img src="farms_paras2.png" alt="Onnelan Farms Oy logo" class="logo">
+      <div class="site-title">
+        <h1>Onnelan Farms </h1>
+        <p>Laadukasta viljelyä ja urakointia</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#etusivu">Etusivu</a>
+      <a href="#tilasta">Tilasta</a>
+      <a href="#palvelut">Palvelut</a>
+      <a href="#kalusto">Kalusto</a>
+      <a href="#yhteys">Yhteystiedot</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="etusivu" class="hero">
+      <div class="hero-content">
+        <h2>Tervetuloa Onnelan Farmsille</h2>
+        <p>
+          Onnelan Farms Oy on nykyaikainen maatila, joka keskittyy lihakarjan kasvattamiseen, viljanviljelyyn,
+          urakointiin ja laadukkaaseen palveluun Pohjois-Karjalassa.
+        </p>
+       <!-- <a href="#yhteys" class="btn-primary">Pyydä tarjous</a> -->
+        <!--<img src="jokukuva" alt="tiedot"-->
+        
+      </div>
+    </section>
+
+    <section id="tilasta" class="section">
+      <div class="container">
+        <h2>Tila ja historia</h2>
+        <p>
+          Onnelan tila on perheyritys, jossa yhdistyvät pitkä kokemus ja moderni kalusto.
+          Panostamme maaperän hyvinvointiin, satovarmuuteen ja vastuulliseen tuotantoon.
+        </p>
+      </div>
+    </section>
+
+    <section id="palvelut" class="section section-alt">
+      <div class="container">
+        <h2>Palvelut</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Viljelypalvelut</h3>
+            <p>
+              Kylvö, ruiskutus ja sadonkorjuu sopimuksen mukaan. Räätälöidyt ratkaisut
+              pelloillesi.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Leikkuupuinti</h3>
+            <p>
+              Sampo-leikkuupuimuri takaa tehokkaan ja hellävaraisen puinnin
+              eri viljalajeille.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Traktoriurakointi</h3>
+            <p>
+              Valtra T235 -traktorilla monipuoliset urakointityöt ympäri vuoden.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kalusto" class="section">
+      <div class="container">
+        <h2>Kalusto</h2>
+        <div class="grid grid-2">
+          <div>
+            <h3>Valtra T235</h3>
+            <ul>
+              <li>Tehokas ja monipuolinen traktori</li>
+              <li>Sopii raskaaseen peltotyöhön ja kuljetuksiin</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Sampo-leikkuupuimuri</h3>
+            <ul>
+              <li>Tehokas puintikone viljalle ja kauralle</li>
+              <li>Tasainen puintijälki ja hyvä kapasiteetti</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="yhteys" class="section section-alt">
+      <div class="container contact">
+        <h2>Yhteystiedot</h2>
+        <p><strong>Onnelan Farms Oy</strong></p>
+        <p>Vehkapurontie 299, 82220 NIITTYLAHTI</p>
+        <p>Puhelin: <a href="tel:+358500831542">0500831542</a></p>
+        <p>Sähköposti: <a href="mailto:timotah@icloud.fi">timotah@icloud.fi</a></p>
+
+
+<form>
+<!-- Tätä ei toistaiseksi tarvitse 
+<label for="nimi">Nimi</label>
+  <input type="text" id="nimi" name="nimi">
+
+  <label for="email">Sähköposti</label>
+  <input type="email" id="email" name="email">
+
+  <label>Sijainti</label>-->
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197.9339757563811!2d29.676889!3d62.530889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469b0d0b4f0c1c4f%3A0x4c8e4c2f0b0b0e4!2sVehkapurontie%20299%2C%2082220%20Niittylahti!5e0!3m2!1sfi!2sfi!4v1700000000000"
+  width="100%"
+  height="350"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+
+ <!-- Eikä tätä <button type="submit">Lähetä</button>>-->
+</form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© <span id="year"></span> Onnelan Farms Oy. Kaikki oikeudet pidätetään.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
