@@ -25,6 +25,14 @@ body {
 
 /* Header */
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white; /* tai sivusi taustaväri */
+}
+
+
 .site-header {
   background: var(--accent);
   color: #ffffff;
@@ -39,6 +47,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  /*position: fixed;*/
 }
 /*Minä lisännyt*/
 .logo {
@@ -47,7 +56,7 @@ body {
 }
 
 .hero img {
-  margin: 2em 0em 2em 0em;
+  margin: 0em 0em 0em 0em;
   height: 100%;
   width: 100%;
 }
@@ -64,10 +73,12 @@ body {
 }
 
 .main-nav {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 0.5rem;
+  /*position: fixed;*/
+
 }
 
 .main-nav a {
@@ -98,7 +109,7 @@ body {
 }
 
 .hero-content {
-  min-height: 75vh;  
+  height: 100vh;  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,11 +255,13 @@ body {
 
 /* Footer */
 
-.site-footer {
+.footer {
   background: #1f1f1f;
   color: #dddddd;
   padding: 1.5rem;
   font-size: 0.9rem;
+  height: 10vh;
+
 }
 
 .footer-content {
@@ -279,4 +292,4 @@ body {
   .hero h2 {
     font-size: 1.8rem;
   }
-}
+
