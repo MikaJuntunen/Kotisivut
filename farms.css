@@ -47,7 +47,7 @@ body {
 }
 
 .hero img {
-  margin: 2em 0em 2em 0em;
+  margin: 0em 0em 0em 0em;
   height: 100%;
   width: 100%;
 }
@@ -98,7 +98,7 @@ body {
 }
 
 .hero-content {
-  min-height: 75vh;  
+  height: 100vh;  
   display: flex;
   flex-direction: column;
   justify-content: center;
