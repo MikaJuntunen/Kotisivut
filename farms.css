@@ -97,6 +97,20 @@ header {
   height: 100%;
   width: 100%;
 }
+
+/* Normaali tila */
+.hero {
+    filter: none;
+    transition: filter 0.3s ease;
+    filter: brightness(1.8) contrast(1.0);
+}
+
+/* Tumma tila */
+.dark-mode .hero{
+    filter: brightness(0.45) contrast(1.2);
+}
+
+
 /*tähän asti*/
 .site-title h1 {
   margin: 0;
@@ -127,8 +141,19 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.button {
-  color:  #ffffff;
+.button.dark-mode {
+  background-color:#0D0A12
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: rgb(126, 101, 58);
+}
+
+button {
+  color:#ffffff;
   text-decoration: none;
   font-size: 0.95rem;
   padding: 0.3rem 0.7rem;
@@ -136,8 +161,8 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.button:hover {
-  background: rgba(255, 255, 255, 0.15);
+button:hover {
+  background: rgba(44, 86, 74, 0.65);
 }
 
 
@@ -159,10 +184,8 @@ header {
   text-align: center;
 }
 
-.hero.dark-mode .etusivu12 {
-  background-color: #1C0F22;   /* mustanvioletti tausta */
-  color: #E6DAF1;              /* vaalea violetti teksti */
-}
+
+
 
 
 .hero-content {
