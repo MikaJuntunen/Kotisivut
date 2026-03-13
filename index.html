@@ -23,6 +23,26 @@
       <a href="#kalusto">Kalusto</a>
       <a href="#yhteys">Yhteystiedot</a>
     </nav>
+
+        <!-- Lisätty tummatila valinta nappi -->
+    <div class="button">
+    <button id="themeToggle">Vaihda tumma tila</button>
+    </div>
+
+    <script>
+    const toggleButton = document.getElementById("themeToggle");
+
+    toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        toggleButton.textContent = "Vaihda normaali tila";
+    } else {
+        toggleButton.textContent = "Vaihda tumma tila";
+    }
+});
+
+</script>
   </header>
 
   <main>
@@ -105,7 +125,7 @@
         <p><strong>Onnelan Farms Oy</strong></p>
         <p>Vehkapurontie 299, 82220 NIITTYLAHTI</p>
         <p>Puhelin: <a href="tel:+358500831542">0500831542</a></p>
-        <p>Sähköposti: <a href="mailto:timotah@icloud.fi">timotah at icloud.fi</a></p>
+        <p>Sähköposti: <a href="mailto:timotah@icloud.fi">timotah(at)icloud.fi</a></p>
 
 
 <form>

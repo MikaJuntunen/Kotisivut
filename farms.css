@@ -23,6 +23,42 @@ body {
   line-height: 1.6;
 }
 
+/*Lisätty dark mode asetus*/
+
+body.dark-mode {
+    background-color:#0D0A12
+   /* color: #f0f0f0;*/
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode section {
+    background-color:#0D0A12
+}
+
+body.dark-mode a {
+    color: #E6DAF1
+}
+
+body.dark-mode p {
+  color: #E6DAF1
+}
+
+body.dark-mode h1 {
+  color: #E6DAF1
+}
+
+body.dark-mode h2 {
+  color: #E6DAF1
+}
+
+body.dark-mode h3 {
+  color: #E6DAF1
+}
+
+body.dark-mode li {
+  color: #E6DAF1
+}
 /* Header */
 
 header {
@@ -91,6 +127,20 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.button {
+  color:  #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
 .main-nav a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -108,6 +158,12 @@ header {
   padding: 5rem 1.5rem;
   text-align: center;
 }
+
+.hero.dark-mode .etusivu12 {
+  background-color: #1C0F22;   /* mustanvioletti tausta */
+  color: #E6DAF1;              /* vaalea violetti teksti */
+}
+
 
 .hero-content {
   height: 100vh;  
