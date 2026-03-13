@@ -26,41 +26,39 @@ body {
 /*Lisätty dark mode asetus*/
 
 body.dark-mode {
-    background-color: #120A14
+    background-color:#0D0A12
    /* color: #f0f0f0;*/
-}
-
-body.dark-mode a {
-    color: purple
-}
-
-body.dark-mode p {
-  color: purple
-}
-
-body.dark-mode h1 {
-  color: purple
-}
-
-body.dark-mode h2 {
-  color: purple
-}
-
-body.dark-mode h3 {
-  color: purple
-}
-
-body.dark-mode li {
-  color: purple
 }
 
 body.dark-mode header,
 body.dark-mode footer,
 body.dark-mode section {
-    background-color: #120A14
+    background-color:#0D0A12
 }
 
+body.dark-mode a {
+    color: #E6DAF1
+}
 
+body.dark-mode p {
+  color: #E6DAF1
+}
+
+body.dark-mode h1 {
+  color: #E6DAF1
+}
+
+body.dark-mode h2 {
+  color: #E6DAF1
+}
+
+body.dark-mode h3 {
+  color: #E6DAF1
+}
+
+body.dark-mode li {
+  color: #E6DAF1
+}
 /* Header */
 
 header {
@@ -128,6 +126,22 @@ header {
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+button {
+  background-color: #1C0F22;
+  color: #E6DAF1;
+  border: 1px solid #2A1830;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  background-color: #2B1B2E;
+  border-color: #A45CC4;
+}
+
 
 .main-nav a:hover {
   background: rgba(255, 255, 255, 0.15);
