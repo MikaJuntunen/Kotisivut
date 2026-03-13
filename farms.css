@@ -127,19 +127,17 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-button {
-  background-color: #1C0F22;
-  color: #E6DAF1;
-  border: 1px solid #2A1830;
-  padding: 12px 20px;
-  border-radius: 999px;
+.button {
+  color:  #ffffff;
+  text-decoration: none;
   font-size: 0.95rem;
-  transition: 0.25s ease;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-button:hover {
-  background-color: #2B1B2E;
-  border-color: #A45CC4;
+.button:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 
@@ -160,6 +158,12 @@ button:hover {
   padding: 5rem 1.5rem;
   text-align: center;
 }
+
+.hero.dark-mode .etusivu12 {
+  background-color: #1C0F22;   /* mustanvioletti tausta */
+  color: #E6DAF1;              /* vaalea violetti teksti */
+}
+
 
 .hero-content {
   height: 100vh;  
