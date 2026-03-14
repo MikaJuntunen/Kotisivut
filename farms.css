@@ -26,38 +26,38 @@ body {
 /*Lisätty dark mode asetus*/
 
 body.dark-mode {
-    background-color:#0D0A12
+    background-color:rgba(0,0,0,0.70);
    /* color: #f0f0f0;*/
 }
 
 body.dark-mode header,
 body.dark-mode footer,
 body.dark-mode section {
-    background-color:#0D0A12
+    background-color:rgba(0,0,0,0.70);
 }
 
-body.dark-mode a {
-    color: #E6DAF1
+body.dark-mode a{
+    color:#4da3ff;
 }
 
 body.dark-mode p {
-  color: #E6DAF1
+  color:#4da3ff;
 }
 
 body.dark-mode h1 {
-  color: #E6DAF1
+  color:#4da3ff;
 }
 
 body.dark-mode h2 {
-  color: #E6DAF1
+  color:#4da3ff;
 }
 
 body.dark-mode h3 {
-  color: #E6DAF1
+  color:#4da3ff;
 }
 
 body.dark-mode li {
-  color: #E6DAF1
+  color:#4da3ff;
 }
 /* Header */
 
@@ -102,12 +102,12 @@ header {
 .hero {
     filter: none;
     transition: filter 0.3s ease;
-    filter: brightness(1.8) contrast(1.0);
+    filter: brightness(1.0) contrast(1.0);
 }
 
 /* Tumma tila */
 .dark-mode .hero{
-    filter: brightness(0.45) contrast(1.2);
+    filter: brightness(0.55) contrast(1.05);
 }
 
 
@@ -140,10 +140,16 @@ header {
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+/*
+ELI #themeToglella VAIHTUU BUTTONIN TYYLI!!!!!!!!!!!
+*/
 
-.button.dark-mode {
-  background-color:#0D0A12
+body.dark-mode #themeToggle {
+    color:#4da3ff;
+    background-color:#C24A1D;
 }
+
+
 
 button {
   margin: 0;
@@ -254,13 +260,24 @@ button:hover {
   }
 }
 
+
 .card {
-  background: var(--card-bg);
+  background:var(--card-bg);
   border-radius: 0.75rem;
   padding: 1.5rem;
   border: 1px solid var(--border-soft);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
+
+/*
+ELI NÄIN SAADAAN KORTTEJA MUOTOILTUA
+*/
+
+body.dark-mode .card {
+background-color:rgba(0,0,0,0.70);
+}
+
+
 
 .card h3 {
   margin-top: 0;
