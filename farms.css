@@ -140,10 +140,16 @@ header {
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+/*
+ELI #themeToglella VAIHTUU BUTTONIN TYYLI!!!!!!!!!!!
+*/
 
-.button.dark-mode {
-  background-color:#0D0A12
+body.dark-mode #themeToggle {
+    color:#4da3ff;
+    background-color:#C24A1D;
 }
+
+
 
 button {
   margin: 0;
@@ -254,13 +260,24 @@ button:hover {
   }
 }
 
+
 .card {
-  background: var(--card-bg);
+  background:var(--card-bg);
   border-radius: 0.75rem;
   padding: 1.5rem;
   border: 1px solid var(--border-soft);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
+
+/*
+ELI NÄIN SAADAAN KORTTEJA MUOTOILTUA
+*/
+
+body.dark-mode .card {
+background-color:rgba(0,0,0,0.70);
+}
+
+
 
 .card h3 {
   margin-top: 0;
