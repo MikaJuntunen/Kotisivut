@@ -217,8 +217,8 @@ button:hover {
 
 #tilasta img {
   margin: 0em 0em 0em 0em;
-  height: 60vh;
-  width:auto;
+  height: 50%;
+  width:50%;
 }
 
 /* Tumma tila */
