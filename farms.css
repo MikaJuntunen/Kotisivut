@@ -213,6 +213,21 @@ button:hover {
   margin-bottom: 1.5rem;
 }
 
+/*KUVAT*/
+
+#tilasta img {
+  margin: 0em 0em 0em 0em;
+  height: 60vh;
+  width:auto;
+}
+
+/* Tumma tila */
+.dark-mode .tilasta{
+    filter: brightness(0.45) contrast(1.05);
+}
+
+
+
 /* Sections */
 
 .section {
