@@ -354,26 +354,11 @@ margin-top: 50px;
 }
 /*KARTAN SÄÄTÖÄ*/
 
-.yhteystiedot {
-  min-height: auto;+
-  display: block;
-  padding: 1.5em;
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* vie sisällön ylös */
-  align-items: center;         /* pitää vaakakeskityksen */
-
-
-
-}
-
-
-
 .maps {
   text-align: center;
   margin-top: 0;
   padding-top: 0;
+  margin-bottom: 10vh;
 }
 
 
