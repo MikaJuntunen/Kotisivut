@@ -352,6 +352,16 @@ margin-top: 50px;
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
+/*KARTAN SÄÄTÖÄ*/
+
+.maps {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 10vh;
+}
+
+
 
 /* Buttons */
 
