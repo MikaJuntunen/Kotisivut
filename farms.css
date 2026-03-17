@@ -319,17 +319,34 @@ background-color:rgba(0,0,0,0.70);
 }
 
 /*KALUSTO*/
+/*
+.kalusto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+*/
 
 .koneita > div {
   background-color: var(--primary-light);
   border-radius: var(--border-radius);
+  padding: 1em;
   margin: 1em;
-  padding: 1.5em;
-  max-width: calc(var(--max-width) * 0.5);
+  text-align: center;
 }
 
-
-
+#kalusto h2 {
+  color: var(--neutral-darkest);
+  font-size: 250%;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+#kalusto h3 {
+  color: var(--neutral-darkest);
+  font-size: 150%;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
 .koneita h3 {
   color: var(--neutral-darkest);
   font-size: 150%;
@@ -340,8 +357,26 @@ background-color:rgba(0,0,0,0.70);
   margin: 1em 0;
 }
 
+/* Kuvien koko */
 .koneita img {
-  width: 100%;
+  width: 200px;
+  height: auto;
+  border-radius: 2px;
+}
+
+/* 3 kuvaa vaakasuuntaan */
+.vaakaan {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+/* 3 kuvaa pystysuuntaan */
+.pystyyn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
 }
 
 
