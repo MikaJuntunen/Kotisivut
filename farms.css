@@ -318,6 +318,38 @@ background-color:rgba(0,0,0,0.70);
   margin-bottom: 0.75rem;
 }
 
+/*KALUSTO*/
+
+.koneita > div {
+  background-color: var(--primary-light);
+  border-radius: var(--border-radius);
+  margin: 1em;
+  padding: 1.5em;
+  max-width: calc(var(--max-width) * 0.5);
+}
+
+
+
+.koneita h3 {
+  color: var(--neutral-darkest);
+  font-size: 150%;
+  margin-bottom: 0.5em;
+}
+
+.koneita p {
+  margin: 1em 0;
+}
+
+.koneita img {
+  width: 100%;
+}
+
+
+
+
+
+
+
 /* YHTEYSTIEDOT */
 /*
 .container {
@@ -428,9 +460,9 @@ max-height: 50%;
 
 /* Pienet näytöt */
 
-@media (max-width: 600px) {
+@media (max-width: auto) {
   .container.contact {
-    background: red;
+    background:rgba(16, 168, 14, 0.55);
   }
 }
 
