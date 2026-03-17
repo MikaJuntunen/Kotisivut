@@ -319,66 +319,55 @@ background-color:rgba(0,0,0,0.70);
 }
 
 /*KALUSTO*/
-/*
-.kalusto {
+
+#kalusto h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-*/
-
-.koneita > div {
-  background-color: var(--primary-light);
-  border-radius: var(--border-radius);
-  padding: 1em;
-  margin: 1em;
-  text-align: center;
+  font-size: 5vh;
+  margin-top: 4vh;
 }
 
 #kalusto h2 {
-  color: var(--neutral-darkest);
-  font-size: 250%;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-#kalusto h3 {
-  color: var(--neutral-darkest);
-  font-size: 150%;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-.koneita h3 {
-  color: var(--neutral-darkest);
-  font-size: 150%;
-  margin-bottom: 0.5em;
-}
-
-.koneita p {
-  margin: 1em 0;
-}
-
-/* Kuvien koko */
-.koneita img {
-  width: 200px;
-  height: auto;
-  border-radius: 2px;
-}
-
-/* 3 kuvaa vaakasuuntaan */
-.vaakaan {
   display: flex;
   justify-content: center;
-  gap: 1.5em;
+  flex-wrap: wrap;
+  font-size: 4vh;
 }
 
-/* 3 kuvaa pystysuuntaan */
-.pystyyn {
+#kalusto h3 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2.5vh;
 }
 
+#kalusto p {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.7vh;
+  font-weight: bold;
+}
+
+
+.koneita {
+  display: grid;
+  /* Luodaan 3 saraketta, jotka vievät saman verran tilaa (1fr) */
+  grid-template-columns: repeat(3, 1fr); 
+  /* Lisää väliä kuvien väliin */
+  gap: 10px; 
+}
+
+.koneita img {
+  /* Varmistetaan, että kuvat täyttävät oman ruutunsa ja skaalautuvat */
+  width: 100%;
+  /* Pakotetaan kuva neliöksi (1/1). Voit käyttää myös esim. 16/9 */
+  aspect-ratio: 1 / 1; 
+  /* Estää kuvaa venymästä ja rajaa sen siististi keskeltä */
+  object-fit: cover; 
+  display: block;
+}
 
 
 
