@@ -65,9 +65,19 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: white; /* tai sivusi taustaväri */
+  background: white;
 }
 
+/*
+header {
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+*/
 
 .site-header {
   /*background: var(--accent);*/
@@ -309,10 +319,19 @@ background-color:rgba(0,0,0,0.70);
 }
 
 /* YHTEYSTIEDOT */
-
+/*
 .container {
 margin-top: 50px;
 max-height: 50%;
+}
+*/
+.container {
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
 }
 
 
