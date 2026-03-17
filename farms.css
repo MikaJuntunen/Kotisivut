@@ -428,7 +428,7 @@ max-height: 50%;
 
 /* Pienet näytöt */
 
-@media (max-width: 600px) {
+@media (max-width: auto) {
   .container.contact {
     background: red;
   }
