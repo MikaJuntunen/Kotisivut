@@ -9,6 +9,8 @@
   --border-soft: #d4cbb5;
 }
 
+
+
 *,
 *::before,
 *::after {
@@ -317,6 +319,82 @@ background-color:rgba(0,0,0,0.70);
   margin-top: 0;
   margin-bottom: 0.75rem;
 }
+
+/*KALUSTO*/
+
+#kalusto h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2.5 rem;
+ /* margin-top: 12em;*/
+  /*padding-top: 2.5em;*/
+  transform: translateY(2.6em);
+}
+
+#kalusto h2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+ /* margin-top: 3.5em;*/
+  padding:0;
+  transform: translateY(1.8em)
+}
+
+#kalusto h3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  transform:none;
+  margin-bottom: 0.3em;
+}
+
+#kalusto p {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.kalusto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+
+.koneita {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 0;
+}
+
+
+
+
+.koneita img {
+  /* Varmistetaan, että kuvat täyttävät oman ruutunsa ja skaalautuvat */
+  width: 100%;
+ /* height: 50%;*/
+  /* Pakotetaan kuva neliöksi (1/1). Voit käyttää myös esim. 16/9 */
+  aspect-ratio: 4 / 3;
+  /* Estää kuvaa venymästä ja rajaa sen siististi keskeltä */
+  object-fit: cover; 
+  display: block;
+}
+
+/* Tumma tila */
+.dark-mode .koneita img{
+    filter: brightness(0.45) contrast(1.05);
+}
+
+
+
+
 
 /* YHTEYSTIEDOT */
 /*
