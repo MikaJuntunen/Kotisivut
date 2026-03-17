@@ -430,7 +430,7 @@ max-height: 50%;
 
 @media (max-width: auto) {
   .container.contact {
-    background: red;
+    background:rgba(16, 168, 14, 0.55);
   }
 }
 
