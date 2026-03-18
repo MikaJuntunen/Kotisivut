@@ -1,0 +1,548 @@
+:root {
+  --bg-main: #f5f3e8;
+  --bg-alt: #e7e2d0;
+  --accent: #2f5d3a;
+  --accent-dark: #23452b;
+  --text-main: #222222;
+  --text-muted: #555555;
+  --card-bg: #ffffff;
+  --border-soft: #d4cbb5;
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+/*Lisätty dark mode asetus*/
+
+body.dark-mode {
+    background-color:rgba(0,0,0,0.70);
+   /* color: #f0f0f0;*/
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode section {
+    background-color:rgba(0,0,0,0.70);
+}
+
+body.dark-mode a{
+    color:#4da3ff;
+}
+
+body.dark-mode p {
+  color:#4da3ff;
+}
+
+body.dark-mode h1 {
+  color:#4da3ff;
+}
+
+body.dark-mode h2 {
+  color:#4da3ff;
+}
+
+body.dark-mode h3 {
+  color:#4da3ff;
+}
+
+body.dark-mode li {
+  color:#4da3ff;
+}
+/* Header */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
+/*
+header {
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+*/
+
+.site-header {
+  /*background: var(--accent);*/
+  /*background-color:#007EC6*/
+  background-color:rgba(30, 115, 185, 0.5);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  /*position: fixed;*/
+  max-width: 100%;
+  margin-left: 0.1em;
+  padding-left: 0em;
+  margin-right: 0em;
+  padding-right: 0em;
+
+}
+/*Minä lisännyt*/
+.logo {
+  height: 60px;
+  width:300px;
+}
+
+
+
+.hero img {
+  margin: 0em 0em 0em 0em;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Normaali tila */
+.hero {
+    filter: none;
+    transition: filter 0.3s ease;
+    filter: brightness(1.0) contrast(1.0);
+}
+
+/* Tumma tila */
+.dark-mode .hero{
+    filter: brightness(0.55) contrast(1.05);
+}
+
+
+/*tähän asti*/
+.site-title h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.site-title p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.main-nav {
+  display: block;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  /*position: fixed;*/
+
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+/*
+ELI #themeToglella VAIHTUU BUTTONIN TYYLI!!!!!!!!!!!
+*/
+
+body.dark-mode #themeToggle {
+    color:#4da3ff;
+    background-color:rgb(242, 194, 0)
+}
+
+
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: rgb(90, 58, 26)
+}
+
+button {
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    background: rgba(44, 86, 74, 0.65);
+ /* background: rgba(111, 201, 174, 0.65);*/
+}
+
+body.dark-mode #themeToggle:hover {
+    background:rgba(255, 255, 255, 0.15);
+}
+
+
+.main-nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("etusivu12.JPG") center/cover no-repeat;
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+
+
+
+
+.hero-content {
+  height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/*KUVAT*/
+
+#tilasta img {
+  margin: 0em 0em 0em 0em;
+    max-width: 80%;
+    height: 55vh;
+}
+
+/* Tumma tila */
+.dark-mode .tilasta{
+    filter: brightness(0.45) contrast(1.05);
+}
+
+
+
+/* Sections */
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.section-alt {
+  background: var(--bg-alt);
+}
+
+.container {
+  min-height: 100vh;
+  max-height: 90%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0em;
+}
+/* MUOTOILLAAN SIVUJEN TEKSTIT*/
+
+.section h2 {
+  margin-top: 3em;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Grid & cards */
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+.card {
+  background:var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+/*
+ELI NÄIN SAADAAN KORTTEJA MUOTOILTUA
+*/
+
+body.dark-mode .card {
+background-color:rgba(0,0,0,0.70);
+}
+
+
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+/*KALUSTO*/
+
+/*TÄLLÄ SAA SKAALATTUA ELEMENTIT MAHTUMAAN SIVULLE*/
+#kalusto {
+  transform: scale(0.75);
+  transform-origin: top center;
+}
+
+
+#kalusto h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2.5 rem;
+ /* margin-top: 12em;*/
+  /*padding-top: 2.5em;*/
+  padding-top: 1.0em;
+  transform: translateY(2.6em);
+}
+
+#kalusto h2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+ /* margin-top: 3.5em;*/
+  padding:0.5em;
+  transform: translateY(1.8em)
+}
+
+#kalusto h3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  transform:none;
+  margin-bottom: 0.3em;
+}
+
+#kalusto p {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.kalusto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+
+.koneita {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 0;
+}
+
+
+.koneita img {
+  /* Varmistetaan, että kuvat täyttävät oman ruutunsa ja skaalautuvat */
+  width: 100%;
+ /* height: 50%;*/
+  /* Pakotetaan kuva neliöksi (1/1). Voit käyttää myös esim. 16/9 */
+  aspect-ratio: 4 / 3;
+  /* Estää kuvaa venymästä ja rajaa sen siististi keskeltä */
+  object-fit: cover; 
+  display: block;
+}
+
+/* Tumma tila */
+.dark-mode .koneita img{
+    filter: brightness(0.45) contrast(1.05);
+}
+
+
+
+
+
+/* YHTEYSTIEDOT */
+/*
+.container {
+margin-top: 50px;
+max-height: 50%;
+}
+*/
+.container {
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+
+
+.contact {
+  display: grid;
+  gap: 0.5vh;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: flex-start;
+  }
+}
+
+.contact-form {
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-soft);
+}
+
+.contact-form h3 {
+  margin-top: 2vh;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  margin-top: 0.25rem;
+  border-radius: 0.4rem;
+  border: 1px solid #c4bba5;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+/*KARTAN SÄÄTÖÄ*/
+
+.maps {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 30vh;
+}
+
+
+
+/* Buttons */
+
+.btn-primary {
+  display: inline-block;
+  background: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+/* Footer */
+
+.footer {
+  background: #1f1f1f;
+  color: #dddddd;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  height: 10vh;
+
+}
+
+.footer-content {
+  text-align: center;
+  height: 60px;
+  width: auto;
+}
+
+/* Pienet näytöt */
+
+@media (max-width: auto) {
+  .container.contact {
+    background:rgba(16, 168, 14, 0.55);
+  }
+}
+
+
+
+
+  .main-nav {
+    padding-top: 0.5rem;
+  }
+
+  .hero {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+

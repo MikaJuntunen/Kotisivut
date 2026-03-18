@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Onnelan Farms Oy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="farms.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <!-- Vaihda src omaan logotiedostoosi -->
+      <img src="farms_logo.jpg" alt="Onnelan Farms Oy logo" class="logo">
+      <div class="site-title">
+        <h1>Onnelan Farms Oy </h1>
+        <p>Laadukasta naudanlihan tuotantoa</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#etusivu">Etusivu</a>
+      <a href="#tilasta">Tilasta</a>
+      <a href="#palvelut">Palvelut</a>
+      <a href="#kalusto">Kalusto</a>
+      <a href="#yhteys">Yhteystiedot</a>
+    </nav>
+
+        <!-- Lisätty tummatila valinta nappi -->
+    <div class="button">
+    <button id="themeToggle">Vaihda tumma tila</button>
+    </div>
+
+    <script>
+    const toggleButton = document.getElementById("themeToggle");
+
+    toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        toggleButton.textContent = "Vaihda normaali tila";
+    } else {
+        toggleButton.textContent = "Vaihda tumma tila";
+    }
+});
+
+</script>
+  </header>
+
+  <main>
+    <section id="etusivu" class="hero">
+      <div class="hero-content">
+        <h2>Tervetuloa Onnelan Farmsille</h2>
+        <p>
+          Tilamme sijaitsee Joensuun kaupungissa, Niittylahdessa. Kasvatamme pääasiassa välikasvatettuja nautoja.
+          Tällähetkellä kasvatuksessa on n. 650 lihanautaa.
+        </p>
+       <!-- <a href="#yhteys" class="btn-primary">Pyydä tarjous</a> -->
+        <!--<img src="jokukuva" alt="tiedot"-->
+        
+      </div>
+    </section>
+
+    <section id="tilasta" class="section">
+      <div class="container">
+        <h2>Tila ja historia</h2>
+        <img src="navetta.jpg" alt="Kuva tilasta" class="tilasta">
+        <p>
+          Onnelan tila on perheyritys, joka on yhtiöitetty vuonna 2022.  
+        </p>
+      </div>
+    </section>
+
+    <section id="palvelut" class="section section-alt">
+      <div class="container">
+        <h2>Palvelut</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Tulossa sisältöä</h3>
+            <p>
+              Päivitetään lähiaikoina
+            </p>
+          </article>
+          <article class="card">
+            <h3>Tulossa sisältöä</h3>
+            <p>
+             Päivitetään lähiaikoina
+            </p>
+          </article>
+          <article class="card">
+            <h3>Tulossa sisältöä</h3>
+            <p>
+             Päivitetään lähiaikoina
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kalusto">
+      <h1>Kalusto</h1>
+      <h2>Tässä maatilan kalustoa</h2>
+      <div class="koneita vaakaan">
+        <div>
+          <h3>Traktori</h3>
+          <img src="./valtra1.jpg" alt="valtra1">
+         <p>T171</p>
+        </div>
+        <div>
+          <h3>Traktori</h3>
+          <img src="./valtra2.jpg" alt="valtra2">
+          <p>X120</p>
+        </div>
+        <div>
+          <h3>Traktori</h3>
+          <img src="./valtra3.jpg" alt="valtra3">
+          <p>T174 Koukkuvaunu ja puskulava</p>
+          </div>
+      </div>
+      <div class="koneita vaakaan">
+        <div>
+          <h3>Kuorma-auto</h3>
+          <img src="./volvo1.jpg" alt="Kuorma-auto">
+          <p>FM13 440</p>
+        </div>
+        <div>
+          <h3>Leikkuupuimuri</h3>
+          <img src="./sampo1.png" alt="Sampo">
+          <p>Sampo Rosenlew C12. 6.3 metrin pöydällä. 4wd</p>
+        </div>
+        <div>
+          <h3>Kaivinkone</h3>
+          <img src="./kaivuri1.jpg" alt="Kaivuri">
+          <p>Volvo EC140DLCM</p>
+        </div>
+        <div>
+        <div>
+      </div>
+    </section>
+
+
+     <!-- RIVINVAIHDOT <br> >>-->
+
+    <section id="yhteys" class="section section-alt">
+      <div class="container contact">
+        <h2>Yhteystiedot</h2> <br>
+        <h3><strong>Onnelan Farms Oy</strong></h3> <br>
+        <p><strong>Timo Tahvanainen</strong></p> <br>
+        <p><strong>Vehkapurontie 299</strong></p> <br>
+        <p><strong>82220 NIITTYLAHTI</strong></p> <br>
+        <p><strong>Puhelin:</strong><a href="tel:+358500831542 ">  O500831542</a></p> <br>
+        <p><strong>Sähköposti:</strong><a href="mailto:timotah@icloud.com">  timotah(at)icloud.com</a></p>
+
+      <form>
+          <div class="maps">
+    <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197.9339757563811!2d29.676889!3d62.530889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469b0d0b4f0c1c4f%3A0x4c8e4c2f0b0b0e4!2sVehkapurontie%20299%2C%2082220%20Niittylahti!5e0!3m2!1sfi!2sfi!4v1700000000000"
+  width="100%"
+  height="350"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+          </div>
+       </div>
+      </form>
+
+      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© <span id="year"></span> Onnelan Farms Oy. Kaikki oikeudet pidätetään.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
