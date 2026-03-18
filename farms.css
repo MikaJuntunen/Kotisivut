@@ -83,8 +83,6 @@ header {
 */
 
 .site-header {
-  /*background: var(--accent);*/
-  /*background-color:#007EC6*/
   background-color:rgba(30, 115, 185, 0.5);
   color: #ffffff;
   padding: 0.75rem 1.5rem;
@@ -108,10 +106,10 @@ header {
   padding-right: 0em;
 
 }
-/*Minä lisännyt*/
+
 .logo {
   height: 60px;
-  width:300px;
+  width: auto;
 }
 
 
@@ -178,8 +176,8 @@ body.dark-mode #themeToggle {
 
 
 button {
-  margin: 0;
-  padding: 0;
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
   border: none;
   background-color: rgb(90, 58, 26)
 }
