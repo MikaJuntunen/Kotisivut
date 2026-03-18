@@ -83,8 +83,6 @@ header {
 */
 
 .site-header {
-  /*background: var(--accent);*/
-  /*background-color:#007EC6*/
   background-color:rgba(30, 115, 185, 0.5);
   color: #ffffff;
   padding: 0.75rem 1.5rem;
@@ -100,18 +98,18 @@ header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  /*position: fixed;*/
+  /*position: static;*/
   max-width: 100%;
-  margin-left: 0.1em;
+  margin-left: 0em;
   padding-left: 0em;
   margin-right: 0em;
   padding-right: 0em;
 
 }
-/*Minä lisännyt*/
+
 .logo {
   height: 60px;
-  width:300px;
+  width: 100px;
 }
 
 
@@ -152,8 +150,9 @@ header {
   display: block;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 0.5rem;
-  /*position: fixed;*/
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em;
+
 
 }
 
@@ -177,8 +176,8 @@ body.dark-mode #themeToggle {
 
 
 button {
-  margin: 0;
-  padding: 0;
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
   border: none;
   background-color: rgb(90, 58, 26)
 }
