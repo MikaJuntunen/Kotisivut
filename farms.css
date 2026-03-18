@@ -322,6 +322,13 @@ background-color:rgba(0,0,0,0.70);
 
 /*KALUSTO*/
 
+/*TÄLLÄ SAA SKAALATTUA ELEMENTIT MAHTUMAAN SIVULLE*/
+#kalusto {
+  transform: scale(0.75);
+  transform-origin: top center;
+}
+
+
 #kalusto h1 {
   display: flex;
   justify-content: center;
@@ -329,6 +336,7 @@ background-color:rgba(0,0,0,0.70);
   font-size: 2.5 rem;
  /* margin-top: 12em;*/
   /*padding-top: 2.5em;*/
+  padding-top: 1.0em;
   transform: translateY(2.6em);
 }
 
@@ -338,7 +346,7 @@ background-color:rgba(0,0,0,0.70);
   flex-wrap: wrap;
   font-size: 1.6rem;
  /* margin-top: 3.5em;*/
-  padding:0;
+  padding:0.5em;
   transform: translateY(1.8em)
 }
 
@@ -359,6 +367,7 @@ background-color:rgba(0,0,0,0.70);
   font-weight: bold;
   margin-top: 0.5em;
 }
+
 .kalusto {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -369,11 +378,9 @@ background-color:rgba(0,0,0,0.70);
 .koneita {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 15px;
   margin: 0;
 }
-
-
 
 
 .koneita img {
