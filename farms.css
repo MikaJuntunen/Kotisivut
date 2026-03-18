@@ -82,6 +82,17 @@ header {
 }
 */
 
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;    /* Pinotaan logo ja valikko päällekkäin */
+    justify-content: center;   /* Keskittää sisällön */
+    text-align: center;
+    padding: 1rem 0.5rem;      /* Pienemmät reunat sivuilla */
+    gap: 1rem;                 /* Väli logon ja valikon välille */
+  }
+}
+
+
 .site-header {
   background-color:rgba(30, 115, 185, 0.5);
   color: #ffffff;
@@ -109,7 +120,7 @@ header {
 
 .logo {
   height: 60px;
-  width: 100px;
+  width: auto;
 }
 
 
