@@ -23,6 +23,7 @@ body {
   background: var(--bg-main);
   color: var(--text-main);
   line-height: 1.6;
+  max-width: 100%;
 }
 
 /*Lisätty dark mode asetus*/
@@ -92,6 +93,7 @@ header {
   align-items: center;
   justify-content: space-between;
   max-width: 100%;
+
 }
 
 .logo-area {
@@ -100,12 +102,19 @@ header {
   gap: 0.75rem;
   /*position: fixed;*/
   max-width: 100%;
+  margin-left: 0.1em;
+  padding-left: 0em;
+  margin-right: 0em;
+  padding-right: 0em;
+
 }
 /*Minä lisännyt*/
 .logo {
   height: 60px;
   width:300px;
 }
+
+
 
 .hero img {
   margin: 0em 0em 0em 0em;
@@ -143,8 +152,9 @@ header {
   display: block;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 0.5rem;
-  /*position: fixed;*/
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em;
+
 
 }
 
