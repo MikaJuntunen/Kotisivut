@@ -71,16 +71,6 @@ header {
   background: white;
 }
 
-/*
-header {
-  min-height: 100vh;  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5em;
-}
-*/
 
 @media (max-width: 768px) {
   .site-header {
@@ -332,7 +322,7 @@ body.dark-mode #themeToggle:hover {
 .grid {
   display: grid;
   gap: 1.5rem;
-  max-height: 30%;
+  max-height: 90vh;
 
 }
 
@@ -384,8 +374,6 @@ background-color:rgba(0,0,0,0.70);
 /*TÄLLÄ SAA SKAALATTUA ELEMENTIT MAHTUMAAN SIVULLE*/
 #kalusto {
   min-height: 100vh;
-  transform: scale(0.75);
-  transform-origin: top center;
 }
 
 
@@ -445,7 +433,8 @@ background-color:rgba(0,0,0,0.70);
 
 .koneita img {
   /* Varmistetaan, että kuvat täyttävät oman ruutunsa ja skaalautuvat */
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
  /* height: 50%;*/
   /* Pakotetaan kuva neliöksi (1/1). Voit käyttää myös esim. 16/9 */
   aspect-ratio: 4 / 3;
