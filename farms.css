@@ -7,14 +7,15 @@
   --text-muted: #555555;
   --card-bg: #4da3ff;
   --border-soft: #d4cbb5;
+  --max-width: 40em;
 }
 
 
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -23,9 +24,13 @@ body {
   background: var(--bg-main);
   color: var(--text-main);
   line-height: 1.6;
-  max-width: 100%;
+  /*max-width: 100%;
+  max-height: 100%;*/
 }
 
+body p{
+  font-weight: bold;
+}
 /*Lisätty dark mode asetus*/
 
 body.dark-mode {
@@ -292,6 +297,12 @@ body.dark-mode #themeToggle:hover {
 .section {
   min-height: 100vh;
   padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0em;
+
 }
 
 #tilasta {
@@ -301,7 +312,7 @@ body.dark-mode #themeToggle:hover {
 .section-alt {
   background: var(--bg-alt);
 }
-
+/*
 .container {
   display: flex;
   flex-direction: column;
@@ -309,6 +320,8 @@ body.dark-mode #themeToggle:hover {
   align-items: center;
   padding: 0em;
 }
+
+*/
 /* MUOTOILLAAN SIVUJEN TEKSTIT*/
 
 .section h2 {
@@ -317,7 +330,22 @@ body.dark-mode #themeToggle:hover {
   font-size: 1.8rem;
 }
 
-/* Grid & cards */
+/*Uutiset korjattuna*/
+.uutiset {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: var(--bg-alt);
+  min-height: 100vh;
+}
+
+.uutiset img {
+  width: 100%;
+}
+
+
+
+/* Grid & cards
 
 .grid {
   display: grid;
@@ -359,7 +387,7 @@ body.dark-mode #themeToggle:hover {
 ELI NÄIN SAADAAN KORTTEJA MUOTOILTUA
 */
 
-body.dark-mode .card {
+body.dark-mode .uutiset {
 background-color:rgba(0,0,0,0.70);
 }
 
