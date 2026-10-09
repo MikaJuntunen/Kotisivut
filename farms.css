@@ -10,8 +10,6 @@
   --max-width: 40em;
 }
 
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -76,7 +74,6 @@ header {
   background: white;
 }
 
-
 @media (max-width: 768px) {
   .site-header {
     flex-direction: column;    /* Pinotaan logo ja valikko päällekkäin */
@@ -87,7 +84,6 @@ header {
   }
 }
 
-
 .site-header {
   background-color:rgba(30, 115, 185, 0.5);
   color: #ffffff;
@@ -97,7 +93,6 @@ header {
   align-items: center;
   justify-content: space-between;
   max-width: 100%;
-
 }
 
 .logo-area {
@@ -110,7 +105,6 @@ header {
   padding-left: 0em;
   margin-right: 0em;
   padding-right: 0em;
-
 }
 
 /* Tämä on turha */
@@ -142,7 +136,6 @@ header {
   width: auto;
   opacity: 0.7;
 }
-
 
 .hero img {
   margin: 0em 0em 0em 0em;
@@ -182,8 +175,6 @@ header {
   gap: 0.75rem;
   margin: 0em 0em 0em 0em;
   padding: 0em 0em;
-
-
 }
 
 .main-nav a {
@@ -202,8 +193,6 @@ body.dark-mode #themeToggle {
     color:#4da3ff;
     background-color:rgb(242, 194, 0)
 }
-
-
 
 button {
   margin: 0em 0em 0em 0em;
@@ -229,7 +218,6 @@ button:hover {
 body.dark-mode #themeToggle:hover {
     background:rgba(255, 255, 255, 0.15);
 }
-
 
 .main-nav a:hover {
   background: rgba(255, 255, 255, 0.15);
@@ -284,8 +272,6 @@ body.dark-mode #themeToggle:hover {
     filter: brightness(0.45) contrast(1.05);
 }
 
-
-
 /* Sections */
 
 .section {
@@ -296,7 +282,6 @@ body.dark-mode #themeToggle:hover {
   justify-content: center;
   align-items: center;
   padding: 0em;
-
 }
 
 #tilasta {
@@ -340,93 +325,56 @@ background-color:rgba(0,0,0,0.70);
 }
 
 /*KALUSTO*/
-
-#kalusto {
-  min-height: 100vh;
-}
-
-
-#kalusto h1 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-size: 2.5 rem;
- /* margin-top: 12em;*/
-  /*padding-top: 2.5em;*/
-  padding-top: 1.0em;
-  transform: translateY(2.6em);
-}
 /*
-#kalusto h2 {
+.kalusto h2 {
   display: flex;
+  text-align: center;
   justify-content: center;
-  flex-wrap: wrap;
-  font-size: 1.6rem;
-  padding:0.5em;
-  transform: translateY(1.8em)
 }
 */
-#kalusto h3 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  transform:none;
-  margin-bottom: 0.3em;
-}
+.kalusto_teksti {
+text-align: center; 
 
-#kalusto p {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-size: 1rem;
-  font-weight: bold;
+}
+ .kalusto_teksti h2 {
+  padding-top: 5em;
+ }
+
+ .kalusto_teksti h3 {
   margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  font-size: 1.4rem;
+ }
+
+.sivu {
+display: flex;
+flex-wrap: wrap;
+/*gap: 10px;*/
+min-height: 80vh;
+max-height: 100vh;
 }
 
 .kalusto {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+width: calc(33.333% - 7px);
 }
 
-
-.koneita {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin: 0;
+.kalusto img {
+  width: 300px;
+  height: 300px;
 }
 
-
-.koneita img {
-  /* Varmistetaan, että kuvat täyttävät oman ruutunsa ja skaalautuvat */
-  width: 50%;
-  margin: 0 auto;
- /* height: 50%;*/
-  /* Pakotetaan kuva neliöksi (1/1). Voit käyttää myös esim. 16/9 */
-  aspect-ratio: 4 / 3;
-  /* Estää kuvaa venymästä ja rajaa sen siististi keskeltä */
-  object-fit: cover; 
-  display: block;
+.kalusto p {
+  margin-bottom: 2em;
+  margin-top: 0.5em;
 }
 
 /* Tumma tila */
-.dark-mode .koneita img{
+.dark-mode .kalusto img{
     filter: brightness(0.45) contrast(1.05);
 }
 
-
-
-
-
 /* YHTEYSTIEDOT */
-/*
-.container {
-margin-top: 50px;
-max-height: 50%;
-}
-*/
+
 .container {
   display: flex;
   flex-direction: column;
@@ -434,7 +382,6 @@ max-height: 50%;
   align-items: center;
   padding: 1.5em;
 }
-
 
 .contact {
   display: grid;
@@ -487,9 +434,6 @@ max-height: 50%;
   margin-top: 0;
   padding-top: 0;
 }
-
-
-
 /* Buttons */
 
 .btn-primary {
@@ -533,9 +477,6 @@ max-height: 50%;
     background:rgba(16, 168, 14, 0.55);
   }
 }
-
-
-
 
   .main-nav {
     padding-top: 0.5rem;
