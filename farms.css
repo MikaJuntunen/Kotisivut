@@ -350,8 +350,9 @@ text-align: center;
 display: flex;
 flex-wrap: wrap;
 /*gap: 10px;*/
-min-height: 80vh;
+min-height: 75vh;
 max-height: 100vh;
+max-width: 100%;
 }
 
 .kalusto {
