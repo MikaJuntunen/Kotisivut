@@ -352,6 +352,7 @@ body.dark-mode #themeToggle:hover {
 
 .card img {
   border-radius: 0.75rem;
+  max-width: 100%;
 }
 
 /*
