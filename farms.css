@@ -325,47 +325,65 @@ background-color:rgba(0,0,0,0.70);
 }
 
 /*KALUSTO*/
-/*
-.kalusto h2 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+#kalusto {
+  padding: 1rem 2rem;
+  min-height: 100vh;
 }
-*/
+
 .kalusto_teksti {
-text-align: center; 
-
+  width: 100%;
+  text-align: center;
 }
- .kalusto_teksti h2 {
-  padding-top: 5em;
- }
 
- .kalusto_teksti h3 {
+.kalusto_teksti h2 {
+  margin-bottom: 0.25rem;
+}
+
+.kalusto_teksti h3 {
   margin-top: 0.5em;
   margin-bottom: 0.2em;
-  font-size: 1.4rem;
- }
-
-.sivu {
-display: flex;
-flex-wrap: wrap;
-/*gap: 10px;*/
-min-height: 75vh;
-max-height: 100vh;
-max-width: 100%;
+  font-size: 1.1rem;
 }
 
-.kalusto {
-width: calc(33.333% - 7px);
+.sivu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 0.75rem;
 }
 
 .kalusto img {
-  width: 300px;
-  height: 300px;
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+  max-height: 18vh;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 700px) {
+  #kalusto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sivu {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    flex: 1;
+    align-content: space-evenly;
+  }
+
+  .kalusto img {
+    max-width: 300px;
+    max-height: 25vh;
+  }
 }
 
 .kalusto p {
-  margin-bottom: 2em;
+  margin-bottom: 0.25rem;
   margin-top: 0.5em;
 }
 
