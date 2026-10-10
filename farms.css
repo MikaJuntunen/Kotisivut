@@ -315,6 +315,11 @@ body.dark-mode #themeToggle:hover {
   width: 100%;
 }
 
+.tilasta,
+.uutiset img {
+  border-radius: 0.60rem;
+}
+
 .uutiset p {
   margin-bottom: 2em;
   margin-top: 0.5em;
@@ -361,7 +366,7 @@ background-color:rgba(0,0,0,0.70);
   max-height: 18vh;
   margin-inline: auto;
   object-fit: contain;
-  border-radius: 0.35rem;
+  border-radius: 0.60rem;
 }
 
 @media (min-width: 700px) {
